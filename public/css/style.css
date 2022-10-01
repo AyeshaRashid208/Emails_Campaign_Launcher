@@ -1,0 +1,168 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.mine-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    /* background-color: #f0f2fc; */
+    background-color:#DDE1E7;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    line-height: 2;
+    color: #495057;
+    background-color: #DEE5EF;
+    background-clip: padding-box;
+    border-radius: 8px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+     position: relative;
+    outline: none;
+    border: none;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5), 
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+}
+
+.form-control:focus {
+    border-color: #DDE1E7;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5), 
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+        
+}
+
+.form-control:focus {
+    outline: #DDE1E7 !important;
+    border-color: #DDE1E7 !important;
+    background-color: #DDE1E7;
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5), 
+    inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+   
+}
+
+input.form-control.settings-input {
+    padding-left:50px;
+    padding-top: 14px;
+}
+
+.s-col {
+    position: relative;
+}
+
+.colr-div {
+    right: 15px;
+    top: 0px;
+    position: absolute;
+    width: 180px;
+    height: 90px;
+    background-color: #9D58A4;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.input-group-append {
+    position: absolute;
+    z-index: 9;
+    background: none;
+    color: black;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    left: 20px;
+    top: 17px;
+
+}
+
+.signup-form {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.input-group>.form-control:not(:first-child) {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-control::placeholder {
+    font-weight: 500;
+}
+
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-group a {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    opacity: 0.9;
+    text-decoration: none;
+
+}
+
+h4.mb-3 {
+    font-weight: 700;
+    opacity: 0.9;
+}
+
+button.btn.login_btn {
+    color: white;
+    background-color: #AA5DAD;
+    margin-top: 0px;
+}
+
+.leaf {
+    position: absolute;
+    width: 110px;
+    height: 150px;
+    border-radius: 0 80%;
+    background-color: #FE4274;
+    right: -125px;
+    top: -90px;
+    transform: rotate(95deg);
+}
+
+
+
+/* ===============================================RESPONSIVENESS========================================================== */
+
+@media (min-width: 320px) and (max-width: 767.98px) {
+    .leaf {
+        display: none;
+        position: absolute;
+        width: 110px;
+        height: 150px;
+        border-radius: 0 80%;
+        background-color: #FE4274;
+        right: -140px;
+        top: -90px;
+        transform: rotate(95deg);
+    }
+
+
+
+}
